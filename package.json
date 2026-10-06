@@ -1,0 +1,9 @@
+{
+  "name": "ava-educa",
+  "version": "1.0.0",
+  "description": "AVA-EDUCA+ - prototipo de ambiente virtual de aprendizagem com HTML, CSS e JavaScript",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

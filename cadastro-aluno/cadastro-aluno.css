@@ -1,0 +1,71 @@
+fieldset {
+    background-color: white;
+    border: 1px solid #d5dad7;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #1b5e20;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 180px;
+}
+
+.campo-grande {
+    width: 300px;
+    flex-grow: 2;
+}
+
+.campo label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo select {
+    padding: 10px;
+    border: 1px solid #d5dad7;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.campo-invalido {
+    border: 1px solid #c62828;
+}
+
+.erro-campo {
+    color: #c62828;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .linha {
+        flex-direction: column;
+    }
+
+    .campo,
+    .campo-grande {
+        width: auto;
+    }
+
+    .botao-principal {
+        width: 100%;
+    }
+}

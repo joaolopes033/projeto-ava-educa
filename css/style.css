@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f4;
+    color: #212529;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b5e20;
+    color: white;
+    padding: 15px 25px;
+}
+
+.nome-sistema {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.estrutura {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas: "menu conteudo";
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    background-color: white;
+    height: 100vh;
+}
+
+.menu button {
+    padding: 12px;
+    border: 1px solid #d5dad7;
+    border-radius: 6px;
+    background-color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+.menu button:hover {
+    background-color: #e8f5e9;
+}
+
+#botao-cursos {
+    background-color: #e0e0e0;
+    color: #888888;
+}
+
+.conteudo {
+    grid-area: conteudo;
+    padding: 25px;
+}
+
+.conteudo h1 {
+    color: #1b5e20;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.mensagem {
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mensagem-erro {
+    background-color: #fdecea;
+    color: #c62828;
+    border: 1px solid #c62828;
+}
+
+.mensagem-sucesso {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #2e7d32;
+}
+
+.mensagem-info {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    border: 1px solid #0d47a1;
+}
+
+.oculto {
+    display: none;
+}
+
+.botao-principal {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 16px;
+}
+
+.botao-principal:hover {
+    background-color: #1b5e20;
+}
+
+@media screen and (max-width: 768px) {
+    .estrutura {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "menu"
+            "conteudo";
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .menu button {
+        width: 45%;
+        text-align: center;
+    }
+
+    .conteudo {
+        padding: 15px;
+    }
+
+    .cabecalho {
+        padding: 12px 15px;
+    }
+
+    .nome-sistema {
+        font-size: 18px;
+    }
+}

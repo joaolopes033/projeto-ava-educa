@@ -1,0 +1,29 @@
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cartao {
+    background-color: white;
+    border: 1px solid #d5dad7;
+    border-top: 4px solid #2e7d32;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.cartao h2 {
+    color: #1b5e20;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.cartao p {
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+}
